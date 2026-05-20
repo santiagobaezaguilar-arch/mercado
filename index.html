@@ -1,55 +1,30 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Tienda de Productos</h1>
+    <h1>Formulario de Productos</h1>
 
-    <!-- FORMULARIO -->
     <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
 
-        <input 
-        type="text" 
-        id="nombre" 
-        placeholder="Nombre del producto"
-        required>
+        <input type="text" id="descripcion" placeholder="Descripción" required>
 
-        <input 
-        type="text" 
-        id="imagen" 
-        placeholder="URL de la imagen"
-        required>
+        <input type="number" id="precio" placeholder="Precio" required>
 
-        <textarea 
-        id="descripcion"
-        placeholder="Descripción"
-        required></textarea>
+        <input type="text" id="imagen" placeholder="URL de la imagen" required>
 
-        <input 
-        type="number" 
-        id="precio"
-        placeholder="Precio"
-        required>
-
-        <button type="submit">
-            Agregar producto
-        </button>
-
+        <button type="submit">Agregar Producto</button>
     </form>
 
-    <!-- GRID -->
-    <section 
-    class="grid-productos" 
-    id="gridProductos">
-    </section>
+    <section id="contenedorProductos"></section>
 
     <script src="app.js"></script>
-
 </body>
 </html>
